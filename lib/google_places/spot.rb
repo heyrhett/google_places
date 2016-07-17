@@ -406,6 +406,7 @@ module GooglePlaces
     # @param [JSON] json_result_object a JSON object to create a Spot from
     # @return [Spot] a newly created spot
     def initialize(json_result_object, api_key)
+      puts json_result_object #debug
       @reference                  = json_result_object['reference']
       @place_id                   = json_result_object['place_id']
       @vicinity                   = json_result_object['vicinity']
